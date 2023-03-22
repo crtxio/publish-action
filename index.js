@@ -1,5 +1,5 @@
-import core from '@actions/core'
 import axios from 'axios'
+import * as core from '@actions/core'
 import { Commit } from '@crtxio/hddata'
 
 async function run() {
