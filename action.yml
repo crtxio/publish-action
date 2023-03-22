@@ -1,0 +1,24 @@
+name: "Publish to Cortex"
+description: "Deploy a site to the Cortex network"
+inputs:
+  publisher:
+    description: "The publisher url"
+    required: true
+    default: "https://press.crtx.io"
+  topic:
+    description: "Topic to publish to. Usually the site domain"
+    required: false
+  key:
+    description: "Private key to use for signing the commit"
+    required: true
+  ptr:
+    description: "IPFS CID to publish"
+    required: false
+outputs:
+  issuer:
+    description: "Issuer of the commit"
+  commit:
+    description: "Encoded commit"
+runs:
+  using: "node16"
+  main: "index.js"

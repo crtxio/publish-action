@@ -1,0 +1,15 @@
+{
+  "name": "@crtxio/publish-action",
+  "version": "1.0.0",
+  "description": "Github action for publishing to the Cortex network",
+  "main": "index.js",
+  "repository": "git@github.com:crtxio/publish-action.git",
+  "author": "Josh Robinson <josh@bproto.io>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@crtxio/hddata": "^0.0.2",
+    "axios": "^1.3.4"
+  }
+}
