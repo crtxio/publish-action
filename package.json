@@ -2,7 +2,6 @@
   "name": "@crtxio/publish-action",
   "version": "1.0.0",
   "description": "Github action for publishing to the Cortex network",
-  "type": "module",
   "main": "index.js",
   "repository": "git@github.com:crtxio/publish-action.git",
   "author": "Josh Robinson <josh@bproto.io>",
