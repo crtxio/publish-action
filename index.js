@@ -1,6 +1,6 @@
-import axios from 'axios'
-import * as core from '@actions/core'
-import { Commit } from '@crtxio/hddata'
+const axios = require('axios')
+const core = require('@actions/core')
+const { Commit } = require('@crtxio/hddata')
 
 async function run() {
   try {
