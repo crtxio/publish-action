@@ -13,7 +13,7 @@ async function run() {
     const commit = await Commit.sign({ ptr }, key, topic)
     const { iss } = commit.json
 
-    await axios.post(publisher + '/commits', commit.encoded)
+    await axios.post(publisher + '/api/commits', commit.encoded)
 
     // Set the output value
     core.setOutput('issuer', iss)
