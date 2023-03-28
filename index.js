@@ -18,6 +18,8 @@ async function run() {
     // Set the output value
     core.setOutput('issuer', iss)
     core.setOutput('commit', commit.encoded)
+
+    console.log('Publsihed commit to ' + publisher, { ...commit.json, commit: encoded })
   } catch (error) {
     core.setFailed(error.message);
   }
